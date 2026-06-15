@@ -16,8 +16,8 @@ New-Item -ItemType Directory -Path (Split-Path $LogFile) -Force | Out-Null
 
 # Build env var setup block
 $envBlock = ($EnvVars.GetEnumerator() | ForEach-Object {
-    "`$env:$($_.Key) = '$($_.Value)'"
-}) -join "`n"
+        "`$env:$($_.Key) = '$($_.Value)'"
+    }) -join "`n"
 
 # Write wrapper that sets env vars and calls the target script
 $wrapperPath = "C:\Temp\hvlab-system-wrapper-$([System.IO.Path]::GetFileNameWithoutExtension($ScriptPath)).ps1"
@@ -31,8 +31,8 @@ exit `$LASTEXITCODE
 # Remove any leftover task with this name
 Unregister-ScheduledTask -TaskName $TaskName -Confirm:$false -ErrorAction SilentlyContinue
 
-$action    = New-ScheduledTaskAction -Execute "powershell.exe" `
-                -Argument "-NonInteractive -ExecutionPolicy Bypass -File `"$wrapperPath`""
+$action = New-ScheduledTaskAction -Execute "powershell.exe" `
+    -Argument "-NonInteractive -ExecutionPolicy Bypass -File `"$wrapperPath`""
 $principal = New-ScheduledTaskPrincipal -UserId "SYSTEM" -RunLevel Highest
 Register-ScheduledTask -TaskName $TaskName -Action $action -Principal $principal -Force | Out-Null
 

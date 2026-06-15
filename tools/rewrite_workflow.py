@@ -1,4 +1,4 @@
-"""Rewrite hvlab-03 workflow to use Invoke-AsAdmin.ps1 helper."""
+"""Rewrite hvlab-03 workflow - use Invoke-AsAdmin.ps1 with KV-sourced credentials."""
 import pathlib
 
 repo = pathlib.Path(r'E:\git\thisismydemo\hybrid-infra-toolkit')
@@ -7,6 +7,26 @@ wf   = repo / '.github' / 'workflows' / 'hvlab-03-deploy-nested-vms.yml'
 content = wf.read_text(encoding='utf-8')
 idx = content.find('    runs-on: [self-hosted, hvlab-host01]')
 header = content[:idx]
+
+# Admin user is hvlabadmin; password comes from KV secret hvlab-host01-admin-password
+ADMIN_USER  = 'hvlabadmin'
+PASS_FILE   = r'C:\Windows\Temp\hvlab-admin.pass'
+HELPER      = r'$env:GITHUB_WORKSPACE\src\deployments\powershell-azurecli\common\Invoke-AsAdmin.ps1'
+
+def vm_step(name, script_num_name):
+    """Return a workflow step that runs a nested-vm script via Invoke-AsAdmin."""
+    script_path = r'$env:GITHUB_WORKSPACE\src\deployments\powershell-azurecli\nested-vms\\' + script_num_name
+    return (
+        f'      - name: "{name}"\n'
+        f'        shell: powershell\n'
+        f'        run: |\n'
+        f'          $helper = "{HELPER}"\n'
+        f'          $script = "{script_path}"\n'
+        f'          $adminPass = Get-Content "{PASS_FILE}" -Raw\n'
+        f'          & $helper -ScriptPath $script -AdminPassword $adminPass -AdminUser {ADMIN_USER}\n'
+        f'          if ($LASTEXITCODE -ne 0) {{ exit $LASTEXITCODE }}\n'
+        f'\n'
+    )
 
 new_body = (
     '    runs-on: [self-hosted, hvlab-host01]\n'
