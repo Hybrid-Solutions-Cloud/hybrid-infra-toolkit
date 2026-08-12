@@ -2,7 +2,7 @@
 
 <!-- What is being worked on right now. Keep it short; update as work moves. -->
 
-_Nothing yet - this repo was just onboarded onto the multi-model standard._
+_No active migration work. The 2026-08-12 organization and VitePress cutover is complete._
 
 <!--
   Optional advisory model hint the next tool should honour if available.
