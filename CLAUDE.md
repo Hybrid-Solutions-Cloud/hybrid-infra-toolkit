@@ -1,4 +1,4 @@
-# thisismydemo-hybrid-infra-toolkit — Claude Code
+# hybrid-infra-toolkit — Claude Code
 
 @AGENTS.md
 

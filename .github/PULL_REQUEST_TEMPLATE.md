@@ -19,5 +19,5 @@
 - [ ] Follows the standards in `docs/standards/engineering-standards.md`
 - [ ] No plain-text secrets, real tenant IDs, or real subscription IDs added
 - [ ] No references to external repositories added
-- [ ] `mkdocs build --strict` passes (if docs changed)
+- [ ] `npm run docs:build` passes (if docs changed)
 - [ ] Updated `docs/project/changelog.md` for user-visible changes

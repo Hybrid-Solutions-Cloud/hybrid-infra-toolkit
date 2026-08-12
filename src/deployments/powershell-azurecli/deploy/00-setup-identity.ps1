@@ -28,7 +28,7 @@ param(
     [string]$KVRg            = 'rg-azrlmgmt-dev-eus-01',     # actual RG — verified 2026-05
     [string]$ContentStorage  = 'sthvlabcontent01',
     [string]$ScvmmSourcePath = 'E:\tmp\SCVMM_2025',
-    [string]$GHRepo          = 'thisismydemo/hybrid-infra-toolkit',
+    [string]$GHRepo          = 'Hybrid-Solutions-Cloud/hybrid-infra-toolkit',
     [string]$ScvmmProductKey = 'EVAL'
 )
 

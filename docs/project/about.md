@@ -7,7 +7,7 @@ The project is intended to grow into a configurable toolkit that can:
 - deploy repeatable hybrid infrastructure labs
 - support multiple deployment targets and identity models
 - provide a shared platform model across multiple automation toolchains
-- publish documentation under the thisismydemo.cloud site
+- publish documentation through the Hybrid Solutions Cloud Labs site
 - align design and implementation standards across code, docs, automation, and configuration
 
 ## Scope

@@ -11,7 +11,7 @@
 param(
     [Parameter(Mandatory)]
     [string]$RunnerToken,
-    [string]$GitHubOrg        = 'thisismydemo',
+    [string]$GitHubOrg        = 'Hybrid-Solutions-Cloud',
     [string]$GitHubRepo       = 'hybrid-infra-toolkit',
     [string]$RunnerLabel      = 'hvlab-host',
     [string]$RunnerName       = 'hvlab-host01',

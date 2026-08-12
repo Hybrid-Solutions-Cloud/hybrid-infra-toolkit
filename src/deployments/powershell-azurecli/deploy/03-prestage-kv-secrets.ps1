@@ -8,7 +8,7 @@
 #   You need Key Vault Secrets Officer role on kv-tplabs-platform
 #
 # For GitHub runner token: generate at
-#   https://github.com/thisismydemo/hybrid-infra-toolkit/settings/actions/runners/new
+#   https://github.com/Hybrid-Solutions-Cloud/hybrid-infra-toolkit/settings/actions/runners/new
 #   (token expires after 1 hour — generate just before running workflow 02)
 ##############################################################################
 

@@ -241,9 +241,9 @@ Branding goals:
 ### Current Preferred Direction
 
 - solution name: `Hybrid Infrastructure Toolkit`
-- GitHub org: `thisismydemo`
-- GitHub repo: `thisismydemo/hybrid-infra-toolkit`
-- canonical docs URL: `https://www.thisismydemo.cloud/hybrid-infra-toolkit`
+- GitHub org: `Hybrid-Solutions-Cloud`
+- GitHub repo: `Hybrid-Solutions-Cloud/hybrid-infra-toolkit`
+- canonical docs URL: `https://labs.hybridsolutions.cloud/hybrid-infra-toolkit/`
 
 Reasoning:
 
@@ -257,14 +257,14 @@ Reasoning:
 - use title case for the public product name
 - use lowercase kebab-case for repo names, docs paths, and URLs
 - keep the repo slug and docs path slug aligned where practical
-- treat the website as a path under `thisismydemo.cloud`, not as a GitHub-style `org/repo` identifier
+- treat the website as a project path under `labs.hybridsolutions.cloud`, not as a GitHub-style `org/repo` identifier
 
 Recommended convention:
 
 - product name: `Hybrid Infrastructure Toolkit`
-- GitHub repository: `https://github.com/thisismydemo/hybrid-infra-toolkit`
+- GitHub repository: `https://github.com/Hybrid-Solutions-Cloud/hybrid-infra-toolkit`
 - docs path slug: `hybrid-infra-toolkit`
-- docs URL: `https://www.thisismydemo.cloud/hybrid-infra-toolkit`
+- docs URL: `https://labs.hybridsolutions.cloud/hybrid-infra-toolkit/`
 
 Optional short alias:
 
@@ -292,7 +292,7 @@ Option 3:
 
 - do not brand the solution around Azure Local unless Azure Local becomes the primary platform story
 - do not brand the solution around `cloud` because the roadmap includes nested and physical deployment targets
-- do not assume the docs URL should mirror GitHub syntax; it should remain a clean path under `thisismydemo.cloud`
+- do not assume the docs URL should mirror GitHub syntax; it should remain a clean path under `labs.hybridsolutions.cloud`
 
 ## Initial Success Criteria
 

@@ -14,7 +14,7 @@ The project is being shaped as a reusable foundation for hybrid infrastructure w
 
 ## Current State
 
-- public documentation is published from MkDocs
+- public documentation is published from VitePress
 - internal repo-management planning lives outside the public docs tree
 - source areas have been prepared under `src/`
 - deployment categories have been planned for Bicep, Terraform, PowerShell or Azure CLI, DSC, Ansible, and ARM templates
@@ -22,20 +22,17 @@ The project is being shaped as a reusable foundation for hybrid infrastructure w
 
 ## Documentation
 
-Public documentation is intended to live at:
+Public documentation is available at:
 
-- `https://www.thisismydemo.cloud/hybrid-infra-toolkit`
+- `https://labs.hybridsolutions.cloud/hybrid-infra-toolkit/`
 
 GitHub Pages for this repo is configured to publish the docs automatically from `main`.
 
-Initial publish target:
+GitHub Pages origin:
 
-- `https://thisismydemo.github.io/hybrid-infra-toolkit/`
+- `https://hybrid-solutions-cloud.github.io/hybrid-infra-toolkit/`
 
-Important note:
-
-- GitHub Pages can publish this repository directly, but it does not by itself make the docs available at `https://thisismydemo.cloud/hybrid-infra-toolkit`
-- that custom path still requires your main website or edge routing layer to forward or proxy `/hybrid-infra-toolkit` to the published GitHub Pages site
+The Labs gateway preserves the `/hybrid-infra-toolkit/` project path while GitHub Pages remains the deployment origin.
 
 ## Public Documentation Sections
 
@@ -48,9 +45,9 @@ Important note:
 Local docs commands:
 
 ```powershell
-python -m pip install mkdocs
-mkdocs serve
-mkdocs build
+npm install
+npm run docs:dev
+npm run docs:build
 ```
 
 ## Repository Structure

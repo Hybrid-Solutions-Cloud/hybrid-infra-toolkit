@@ -1,7 +1,7 @@
 """Rewrite hvlab-03 workflow - use Invoke-AsAdmin.ps1 with KV-sourced creds."""
 import pathlib
 
-repo = pathlib.Path(r'E:\git\thisismydemo\hybrid-infra-toolkit')
+repo = pathlib.Path(r'D:\git\hybrid-solutions-cloud\hybrid-infra-toolkit')
 wf   = repo / '.github' / 'workflows' / 'hvlab-03-deploy-nested-vms.yml'
 
 content = wf.read_text(encoding='utf-8')

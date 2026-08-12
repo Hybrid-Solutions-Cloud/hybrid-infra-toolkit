@@ -19,7 +19,7 @@ resource federatedCredMain 'Microsoft.ManagedIdentity/userAssignedIdentities/fed
   name: 'github-actions-hvlab-main'
   properties: {
     issuer:    'https://token.actions.githubusercontent.com'
-    subject:   'repo:thisismydemo/hybrid-infra-toolkit:ref:refs/heads/main'
+    subject:   'repo:Hybrid-Solutions-Cloud/hybrid-infra-toolkit:ref:refs/heads/main'
     audiences: ['api://AzureADTokenExchange']
   }
 }
@@ -30,7 +30,7 @@ resource federatedCredDispatch 'Microsoft.ManagedIdentity/userAssignedIdentities
   dependsOn: [federatedCredMain]
   properties: {
     issuer:    'https://token.actions.githubusercontent.com'
-    subject:   'repo:thisismydemo/hybrid-infra-toolkit:environment:hvlab'
+    subject:   'repo:Hybrid-Solutions-Cloud/hybrid-infra-toolkit:environment:hvlab'
     audiences: ['api://AzureADTokenExchange']
   }
 }

@@ -37,10 +37,10 @@ Hybrid Infrastructure Toolkit is being built as a reusable platform for:
 ## Current Decisions
 
 - product name: `Hybrid Infrastructure Toolkit`
-- GitHub repository: `thisismydemo/hybrid-infra-toolkit`
-- docs path: `https://www.thisismydemo.cloud/hybrid-infra-toolkit`
-- documentation stack: MkDocs for now
-- GitHub Pages publish URL: `https://thisismydemo.github.io/hybrid-infra-toolkit/`
+- GitHub repository: `Hybrid-Solutions-Cloud/hybrid-infra-toolkit`
+- docs path: `https://labs.hybridsolutions.cloud/hybrid-infra-toolkit/`
+- documentation stack: VitePress
+- GitHub Pages origin: `https://hybrid-solutions-cloud.github.io/hybrid-infra-toolkit/`
 
 ## Current Focus
 
@@ -54,7 +54,7 @@ Hybrid Infrastructure Toolkit is being built as a reusable platform for:
 
 - GitHub Pages is configured for this repository
 - the GitHub Pages URL is the first live publish target
-- publishing under `thisismydemo.cloud/hybrid-infra-toolkit` still requires website routing outside this repository
+- the Labs gateway publishes the same project path at `labs.hybridsolutions.cloud`
 
 ## Internal Planning
 

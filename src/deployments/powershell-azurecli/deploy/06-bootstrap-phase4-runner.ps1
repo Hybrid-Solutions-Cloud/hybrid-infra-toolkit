@@ -8,7 +8,7 @@
 
 param(
     [string]$RegistrationToken,
-    [string]$RepoUrl = 'https://github.com/thisismydemo/hybrid-infra-toolkit',
+    [string]$RepoUrl = 'https://github.com/Hybrid-Solutions-Cloud/hybrid-infra-toolkit',
     [string]$RunnerLabels = 'self-hosted,hvlab-host01',
     [string]$RunnerName = 'hvlab-host01'
 )

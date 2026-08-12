@@ -186,9 +186,9 @@ jobs:
           fi
 
           if [ -n "$PAT" ]; then
-            REG_TOKEN=$(GH_TOKEN="$PAT" gh api -X POST "/repos/thisismydemo/hybrid-infra-toolkit/actions/runners/registration-token" --jq .token)
+            REG_TOKEN=$(GH_TOKEN="$PAT" gh api -X POST "/repos/Hybrid-Solutions-Cloud/hybrid-infra-toolkit/actions/runners/registration-token" --jq .token)
           else
-            REG_TOKEN=$(gh api -X POST "/repos/thisismydemo/hybrid-infra-toolkit/actions/runners/registration-token" --jq .token)
+            REG_TOKEN=$(gh api -X POST "/repos/Hybrid-Solutions-Cloud/hybrid-infra-toolkit/actions/runners/registration-token" --jq .token)
           fi
           if [ -z "$REG_TOKEN" ]; then
             echo "WARNING: Could not get runner registration token (token may lack admin scope)."

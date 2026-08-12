@@ -2,7 +2,7 @@
 
 ## Overview
 
-Deployment runs from `thisismydemo/hybrid-infra-toolkit` using 10 GitHub Actions workflows.
+Deployment runs from `Hybrid-Solutions-Cloud/hybrid-infra-toolkit` using 10 GitHub Actions workflows.
 
 **Runner split:**
 

@@ -56,7 +56,7 @@ var tags = {
   costCenter: 'tplabs-demo'
   demoEvent: 'mms-moa-2026'
   createdBy: 'bicep'
-  repo: 'thisismydemo/hybrid-infra-toolkit'
+  repo: 'Hybrid-Solutions-Cloud/hybrid-infra-toolkit'
 }
 
 // =============================================================================
